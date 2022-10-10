@@ -16,7 +16,18 @@ const Header = () => {
             <Link to="/about">About</Link>
            
             </nav>
-           
+            <div className='container'>
+            <img src={logo} alt="Logo" />
+
+            <div className='description'>
+            <h4>Quiz Tips</h4>
+            <p>1.First of all you need to focus your question paper.</p>
+            <p>2. At a glance, you will see all the questions. </p>
+            <p>3. Dont waste time in one question. </p>
+            <p>4. "Multiple Choice” questions will only allow  select one answer. </p>
+            </div>
+            
+            </div>
 
             </div>
         
