@@ -6,34 +6,35 @@ import Topics from './Components/Topics/Topics';
 import Chart from './Components/Chart/Chart';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<Main></Main>,
+    children:[
+      {
+        path:'/',
+        loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
+        element:<Topics></Topics>
+      },
+      {
+        path:'/chart',
+        element:<Chart></Chart>
+      },
+      {
+        path:'/blog',
+        element:<Blog></Blog>
+      },
+      {
+        path:'/about',
+        element:<About></About>,
+      }
+    ]
+  }
+
+])
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path:"/",
-      element:<Main></Main>,
-      children:[
-        {
-          path:'/',
-          loader:()=>fetch(''),
-          element:<Topics></Topics>
-        },
-        {
-          path:'/chart',
-          element:<Chart></Chart>
-        },
-        {
-          path:'/blog',
-          element:<Blog></Blog>
-        },
-        {
-          path:'/about',
-          element:<About></About>,
-        }
-      ]
-    }
-
-  ])
+  
   return (
     <div className="App">
      <RouterProvider router={router}></RouterProvider>
