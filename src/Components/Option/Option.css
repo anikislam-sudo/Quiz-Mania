@@ -1,0 +1,22 @@
+
+.btn
+{
+    display: grid;
+    grid-template-columns: repeat (2fr,2fr);
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px;
+    width: 50%;
+    padding-left: 25%;
+  
+    }
+  .btn1{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    
+  }
+  .btn1:hover{
+    background-color: rgb(41, 113, 229);
+   color: white;
+  }

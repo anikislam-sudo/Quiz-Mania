@@ -6,6 +6,8 @@ import Topics from './Components/Topics/Topics';
 import Chart from './Components/Chart/Chart';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
+import TopicDetails from './Components/TopicDetails/TopicDetails';
+import 'react-toastify/dist/ReactToastify.css';
 const router = createBrowserRouter([
   {
     path:"/",
@@ -15,6 +17,13 @@ const router = createBrowserRouter([
         path:'/',
         loader:()=>fetch('https://openapi.programming-hero.com/api/quiz'),
         element:<Topics></Topics>
+      },
+      {
+        path:'/topic/:topicId',
+        loader:async({params})=>{
+         return  fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+      },
+      element:<TopicDetails></TopicDetails>
       },
       {
         path:'/chart',
