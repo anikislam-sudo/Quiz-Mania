@@ -9,7 +9,7 @@ const Blog = () => {
 Let us create a simple application to React to understand how the React Router works. The application will contain three components: home component, about a component, and contact component. We will use React Router to navigate between these components.</p>
         <h4>2.How does context API works?</h4>
         <p>The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.Its like a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state. </p>
-        <h4>what is useRef?</h4>
+        <h4>3.what is useRef?</h4>
         <p>The useRef Hook allows you to persist values between renders.<br></br>
 
 It can be used to store a mutable value that does not cause a re-render when updated.<br></br>

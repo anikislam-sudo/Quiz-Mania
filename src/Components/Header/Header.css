@@ -8,9 +8,11 @@
     height: 80px;
    
 }
-.header-container div{
-    color: rgb(234, 239, 82);
+.color {
+    color: rgb(221, 221, 106);
 }
+
+
 .header-container a{
    margin-left: 200px;
     text-decoration: none;
@@ -38,3 +40,28 @@
     height:300px;
     
 }
+@media only screen and (max-width: 600px) {
+  .header-container{
+    flex-direction: column;
+   height: 300px;
+    
+  }
+  .header-container a{
+    display: block;
+    width: 60px;
+    padding-top: 40px;
+    margin-right: 195px;
+    margin-bottom: 4px;
+     
+  }
+.container{
+    flex-direction: column;
+}
+.description{
+    font-weight: 200;
+}
+.container img{
+    width: 100%;
+}
+
+  }

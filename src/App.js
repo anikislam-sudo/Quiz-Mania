@@ -5,7 +5,7 @@ import Main from './Layout/Main';
 import Topics from './Components/Topics/Topics';
 import Chart from './Components/Chart/Chart';
 import Blog from './Components/Blog/Blog';
-import About from './Components/About/About';
+
 import TopicDetails from './Components/TopicDetails/TopicDetails';
 import 'react-toastify/dist/ReactToastify.css';
 const router = createBrowserRouter([
@@ -34,13 +34,12 @@ const router = createBrowserRouter([
         path:'/blog',
         element:<Blog></Blog>
       },
-      {
-        path:'/about',
-        element:<About></About>,
-      }
-    ]
-  }
+     
 
+    ]
+  },
+{path:'*',
+element:<div>404:Page not found</div>}
 ])
 
 function App() {

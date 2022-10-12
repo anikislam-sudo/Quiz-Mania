@@ -7,14 +7,15 @@ const Header = () => {
         <div>
     
         <nav className='header-container'>
-            <div>
+            <div className='color'>
                 <h2>Quiz Mania</h2>
-            </div>
+                </div>
+        <div>
             <Link to="/">Topics</Link>
             <Link to="/chart">Chart</Link>
             <Link to="/blog">Blog</Link>
-            <Link to="/about">About</Link>
-           
+            
+           </div>
             </nav>
             <div className='container'>
             <img src={logo} alt="Logo" />
